@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+    inteiro a, b, soma, resultado
+
+    escreva("Qual o valor de A: ")
+    leia(b)
+
+    escreva("Qual o valor de B: ")
+    leia(a)
+
+
+    escreva("\nO valor de A = ", a)
+    escreva("\nO valor de B = ", b)
+  }
+}
