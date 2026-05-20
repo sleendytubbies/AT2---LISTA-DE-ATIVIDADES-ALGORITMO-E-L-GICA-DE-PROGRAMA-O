@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+    inteiro salario, percentual, mult, resultado, rese
+    escreva("Quanto é o seu salario: ")
+    leia(salario)
+
+    escreva("Quanto é o percentual que voce quer: ")
+    leia(percentual)
+
+    mult = salario * percentual 
+    resultado = mult / 100
+    rese = salario + resultado
+
+    escreva("Seu salario sera de ", rese)
+  }
+}
