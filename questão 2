@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+    inteiro a, b, soma, resultado
+
+    escreva("Qual o valor de A: ")
+    leia(a)
+
+    escreva("Qual o valor de B: ")
+    leia(b)
+
+    soma = a + b
+    resultado = soma * soma
+
+    escreva("Resultado do quadrado: ", resultado)
+  }
+}
