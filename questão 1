@@ -3,10 +3,14 @@ programa {
     inteiro a, b, soma, resultado
 
     escreva("Qual o valor de A: ")
-    leia(b)
+    leia(a)
 
     escreva("Qual o valor de B: ")
-    leia(a)
+    leia(b)
+
+    soma = a
+    a = b 
+    b = soma 
 
 
     escreva("\nO valor de A = ", a)
