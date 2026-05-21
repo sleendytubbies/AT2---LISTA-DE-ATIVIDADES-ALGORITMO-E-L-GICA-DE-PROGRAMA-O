@@ -1,0 +1,68 @@
+programa {
+  funcao inicio() {
+    inteiro n1 , n2 , n3 , temp
+
+    escreva("Digite um numero: ") // guarda a info do n1  ////// n1 = 5 / n2 = 1 / n3 = 10
+    leia(n1)
+
+    escreva("Digite um numero: ") // tem q comprar esse numero com a n1 
+    leia(n2)
+
+    se(n1 > n2){
+      escreva("Digite um numero: ")
+      leia(n3)
+      se(n1 > n3){
+        se(n2 > n3){
+          temp = n1
+          n1 = n3
+          n3 = temp
+          escreva(n1 , " " , n2 , " " , n3) // n1 = 10 / n2 = 5 / n3 = 1
+        }
+        senao{
+          temp = n1 
+          n1 = n2 
+          n2 = n3
+          n3 = temp
+          escreva(n1 , " " , n2 , " " , n3) // n1 = 10 / n2 = 1 / n3 = 5
+        }
+      }
+      senao{
+        temp = n2
+        n2 = n1 
+        n1 = temp
+        escreva(n1 , " " , n2 , " " , n3) // n1 = 5 / n2 = 1 / n3 = 10
+      }
+    }
+
+    // div
+
+    senao{
+      escreva("Digite um numero: ") 
+      leia(n3)
+      se(n2 > n3){
+        se(n1 > n3){
+          temp = n2
+          n2 = n1
+          n1 = n3
+          n3 = temp
+          escreva(n1 , " " , n2 , " " , n3) // n1 = 5 / n2 = 10 / n3 = 1
+        }
+        senao{
+          temp = n2 
+          n2 = n3
+          n3 = temp
+          escreva(n1 , " " , n2 , " " , n3) // n1 = 1 / n2 = 10 / n3 = 5
+        }
+      }
+      senao{
+        temp = n2
+        n2 = n1 
+        n1 = temp
+        escreva(n1 , " " , n2 , " " , n3)
+      }
+
+    }
+
+  }
+  
+}
