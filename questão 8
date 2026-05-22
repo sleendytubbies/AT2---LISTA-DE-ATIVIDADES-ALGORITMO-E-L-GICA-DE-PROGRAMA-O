@@ -1,0 +1,36 @@
+programa {
+  funcao inicio() {
+    inteiro senha , contagem
+
+    contagem = 0
+
+    escreva("Digite sua senha: ")
+    leia(senha)
+
+    contagem = contagem + 1
+
+    se(senha != 2025){  // n tenho ctz se podia usar o "se" e o "senao" 
+      enquanto (contagem <= 3){
+
+        contagem = contagem + 1
+        escreva("Senha incorreta. Tente novamente: ")
+        leia (senha)
+
+        se(senha == 2025){
+
+          contagem = contagem + 3
+
+          escreva ("Acesso permitido.")
+        }
+
+      }
+
+      se(senha != 2025){
+        escreva ("Acesso Bloqueado")
+      }
+        
+    }senao escreva("Acesso permitido.")
+    
+  }
+  
+}
