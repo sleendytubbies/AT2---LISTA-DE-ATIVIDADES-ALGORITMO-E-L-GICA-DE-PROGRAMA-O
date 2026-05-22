@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+    inteiro nota , menor , maior , conta
+
+    conta = 0
+    maior = 0
+    menor = 0
+
+    enquanto(conta < 5){
+
+      conta = conta + 1
+
+      escreva("De sua nota de 1 a 5: ")
+      leia(nota)
+
+      se(nota >= 4){
+        maior = maior + 1
+      }
+      senao{
+        menor = menor + 1
+      } 
+
+    }
+    escreva("\nQuantidade de clientes que deram nota maior ou igual a 4: " , maior)
+    escreva("\nQuantidade de clientes que deram nota menor que 4: ", menor)
+    
+  }
+}
