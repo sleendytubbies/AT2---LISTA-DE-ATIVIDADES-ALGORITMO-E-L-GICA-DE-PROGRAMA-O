@@ -1,0 +1,41 @@
+programa {
+  funcao inicio() {
+    inteiro por, mat , cg , soma , media
+    cadeia nome
+
+    escreva("Digite seu nome: ")
+    leia(nome)
+
+    escreva("Digite sua nota de PORTUGUÊS: ")
+    leia(por)
+    enquanto(por < 5){
+      escreva("Nota de PORTUGUÊS invalida, digite novamente: ")
+      leia(por)
+    }
+
+    escreva("Digite sua nota de MATEMÁTICA: ")
+    leia(mat)
+    enquanto(mat < 5){
+      escreva("Nota de MATEMÁTICA invalida, digite novamente: ")
+      leia(mat)
+    }
+
+    escreva("Digite sua nota de CONHECIMENTOS GERAIS: ")
+    leia(cg)
+    enquanto(cg < 5){
+      escreva("Nota de CONHECIMENTOS GERAIS invalida, digite novamente: ")
+      leia(cg)
+    }
+
+    soma = por + mat + cg
+    media = soma / 3
+
+    se(media >= 7){
+      escreva("Parabéns ", nome , " você foi aprovado, sua media de notes é ", media)
+    }
+    senao escreva(nome ," você não foi aprovado , sua media de notas é ", media)
+
+
+
+  }
+}
