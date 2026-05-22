@@ -1,0 +1,25 @@
+programa {
+  funcao inicio() {
+    inteiro valor , conta, x , y
+    cadeia produto , nome
+
+    conta = 0
+    x = 0
+
+    enquanto(conta < 3){
+      escreva("\nDigite o NOME do produto: ")
+      leia(produto)
+      escreva("Digite o VALOR do produtor: ")
+      leia(valor)
+
+      conta = conta + 1
+
+      se(valor > x){
+        x = valor 
+        nome = produto
+      }
+
+    }
+    escreva("\nO produto mais caro foi o ", nome , " no valor foi de : " , x,"R$")
+  }
+}
