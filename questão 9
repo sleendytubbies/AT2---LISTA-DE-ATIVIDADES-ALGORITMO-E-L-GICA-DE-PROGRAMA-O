@@ -1,0 +1,78 @@
+programa {
+
+  inclua biblioteca Util --> u
+
+  funcao inicio() {
+    inteiro opcao , saldo , valor , i
+    cadeia esco
+
+    valor = 0
+    saldo = 0 
+    opcao = 0
+
+    enquanto(opcao != 3){
+
+    escreva("1) Ver saldo\n")
+    escreva("2) Realizar depósito\n")
+    escreva("3) Encerrar atendimento\n\n")
+    
+
+    escreva("Escolha sua opção: ")
+    leia(opcao)
+
+    limpa()
+
+
+    
+      escolha(opcao){
+        caso 1:
+            escreva("Seu saldo é de " , valor , "R$\n")
+            escreva("Deseja depositar ? \n")
+            escreva("1) Sim\n")
+            escreva("2) Não\n")
+            leia(esco)
+            se(esco == 1){
+
+            }
+          
+        caso 2:
+          escreva("Digite o valor que voce deseja depositar : ")
+          leia(saldo)
+
+          valor = valor + saldo
+
+          limpa()
+
+          para(i = 0; i < 2; i++){
+            escreva("Atendimento em andamento ")
+            u.aguarde (500)
+
+            limpa()
+            escreva("Atendimento em andamento. ")
+            u.aguarde (500)
+
+            limpa()
+            escreva("Atendimento em andamento.. ")
+            u.aguarde (500)
+
+            limpa()
+            escreva("Atendimento em andamento... ")
+            u.aguarde (500)
+
+            limpa()
+          }
+
+          escreva("Deposito concluido.")
+          u.aguarde (3000)
+
+          limpa()
+
+          pare
+          
+        caso 3:
+          escreva("Entendimento encerrado\n")
+
+      }
+    }
+  }
+}
