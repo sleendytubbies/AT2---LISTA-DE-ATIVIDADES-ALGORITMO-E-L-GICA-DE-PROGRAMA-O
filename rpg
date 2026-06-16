@@ -13,12 +13,17 @@ programa {
       escolha(login){
         caso 1:
         login2 = 1
-        correto = 123
+        correto = 12345
         pare
 
         caso 2:
         login2 = 1
         correto = 321
+        pare
+
+        caso 3:
+        login2 = 1
+        correto = 12062026
         pare
 
         caso contrario:
