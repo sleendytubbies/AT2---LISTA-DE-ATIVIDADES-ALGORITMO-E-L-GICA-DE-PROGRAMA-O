@@ -1,0 +1,57 @@
+programa {
+  inclua biblioteca Util --> u
+  funcao inicio() {
+    inteiro login = 0 , senhaconta = 0 , correto = 0 , senhacorreta = 0 , login2 = 0
+
+
+    enquanto(login2 != 1){
+
+      escreva("Bem vindo(a) ao Paper Bank\n")
+      escreva("Login: ")
+      leia(login)
+
+      escolha(login){
+        caso 1:
+        login2 = 1
+        correto = 123
+        pare
+
+        caso 2:
+        login2 = 1
+        correto = 321
+        pare
+
+        caso contrario:
+          escreva("Login Incorreto")
+          u.aguarde(1000)
+          limpa()
+        pare
+      }
+      limpa()
+    }
+
+    enquanto(senhacorreta != 1){
+
+      escreva("Bem vindo(a) ao Paper Bank\n")
+      escreva("Login: ", login, "\n")
+      escreva("Senha: ")
+      leia(senhaconta)
+
+      se(senhaconta == correto){
+        escreva("Senha correta")
+        u.aguarde(1000)
+        senhacorreta = 1
+        limpa()
+      }
+      senao{
+        escreva("Senha incorreta")
+        u.aguarde(1000)
+        limpa()
+      }
+    }
+
+    
+    
+    
+  }
+}
